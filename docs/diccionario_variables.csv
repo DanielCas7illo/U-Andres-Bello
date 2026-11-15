@@ -1,0 +1,10 @@
+variable,rol_analitico,descripcion,dtype,n_unicos,pct_nulos
+is_operating,binaria,"¿Está Operativa?: True = sí, False = no",bool,2,0.0
+is_hiring,binaria,"¿Está contratando?: True = sí, False = no",bool,2,0.0
+nonprofit,binaria,"¿Sin Fines de Lucro?: True = sí, False = no ",bool,2,0.0
+status,nominal,"Estado de la empresa:  Active, Inactive, Acquired o Public",object,4,0.0
+is_ai,binaria,"¿Relacionada a IA?: True = sí, False = no",bool,2,0.0
+team_size,cuantitativa discreta,Tamaño del equipo de la empresa,float64,200,1.7
+industry,nominal,Industria a la que pertenece la empresa,object,9,0.0
+hq_country,nominal,País donde se encuentra la casa matriz de la empresa,object,89,2.5
+years_since_batch,cuantitativa discreta,Años transcurridos desde que la empresa participó en YC,float64,23,0.0
