@@ -87,3 +87,20 @@ class EliminarYCombinator(Transformador):
         return df[
             df["name"] != "Y Combinator"
         ].copy()
+class ImputadorTeamSize(Transformador):
+    """
+    Imputa valores nulos usando la mediana.
+    """
+
+    def aprender(self, df):
+
+        return {
+            "mediana": float(
+                df[self.columna].median()
+            ),
+            "nulos": int(
+                df[self.columna]
+                .isna()
+                .sum()
+            )
+        }
