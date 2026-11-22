@@ -140,3 +140,25 @@ class CompletarPais(Transformador):
         )
 
         return df
+class CorregidorYears(Transformador):
+    """
+    Corrige valores negativos en years_since_batch.
+    """
+
+    def aprender(self, df):
+
+        return {
+            "negativos": int(
+                (df[self.columna] < 0)
+                .sum()
+            )
+        }
+
+    def aplicar(self, df):
+
+        df.loc[
+            df[self.columna] < 0,
+            self.columna
+        ] = 0
+
+        return df
