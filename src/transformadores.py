@@ -114,3 +114,29 @@ class ImputadorTeamSize(Transformador):
         )
 
         return df
+class CompletarPais(Transformador):
+    """
+    Completa países faltantes con Desconocido.
+    """
+
+    def aprender(self, df):
+
+        return {
+            "valor": "Desconocido",
+            "nulos": int(
+                df[self.columna]
+                .isna()
+                .sum()
+            )
+        }
+
+    def aplicar(self, df):
+
+        df[self.columna] = (
+            df[self.columna]
+            .fillna(
+                self._parametros["valor"]
+            )
+        )
+
+        return df
