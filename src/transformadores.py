@@ -71,3 +71,19 @@ class Transformador(ABC):
     @abstractmethod
     def aplicar(self, df):
         pass
+class EliminarYCombinator(Transformador):
+    """
+    Elimina el registro que corresponde a Y Combinator.
+    """
+
+    def aprender(self, df):
+
+        return {
+            "filas_antes": len(df)
+        }
+
+    def aplicar(self, df):
+
+        return df[
+            df["name"] != "Y Combinator"
+        ].copy()
