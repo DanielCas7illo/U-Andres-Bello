@@ -104,3 +104,13 @@ class ImputadorTeamSize(Transformador):
                 .sum()
             )
         }
+    def aplicar(self, df):
+
+        df[self.columna] = (
+            df[self.columna]
+            .fillna(
+                self._parametros["mediana"]
+            )
+        )
+
+        return df
