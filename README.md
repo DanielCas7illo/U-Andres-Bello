@@ -1,22 +1,51 @@
-# Grupo-7-Programacion-Ciencia-de-Datos Descripción del Proyecto
- Este proyecto tiene como objetivo analizar las características de las startups presentes en el dataset de Y Combinator, con énfasis en la identificación de factores asociados a la continuidad operativa de las empresas.
+# Daniel Esteban Castillo Paillamil
+## Programación para Ciencia de Datos
+### Descripción del Proyecto
+Este proyecto analiza la continuidad operacional de startups pertenecientes a Y Combinator, evaluando factores como el uso de inteligencia artificial, el tamaño de los equipos y la antigüedad de las empresas.
 
-Las actividades se desarrollan utilizando Python y librerías de ciencia de datos, aplicando metodologías de exploración, transformación y validación de datos dentro de un entorno reproducible.
+### Fuente de Datos
+Dataset Y Combinator Companies:
 
-F1 - Definición del Problema Objetivo General Analizar las características de las startups para identificar patrones asociados a su estado operativo.
+https://cotera.co/datasets/library/y-combinator-companies
 
-Objetivos Específicos Comprender la estructura del dataset. Identificar variables relevantes para el análisis. Definir la problemática de investigación. Establecer el flujo inicial de trabajo. Configurar un entorno reproducible para el proyecto. F1 F1_Definicion.ipynb
+### Ubicación Repositorio Github semana 1.
 
-F2 - Exploración, Transformación y Validación de Datos Durante esta fase se realiza:
+https://github.com/Marco-Basso-B/Grupo-7-Programacion-Ciencia-de-Datos/tree/main
 
-Carga del dataset. Exploración inicial de los datos. Identificación de valores nulos. Detección de registros duplicados. Limpieza de datos. F2_Exploración.ipynb Dependencias Las dependencias del proyecto se encuentran registradas en:
+### Fase 1: Definición del Problema
+Durante esta fase se definió la problemática de investigación, los objetivos del proyecto y el alcance del análisis.
+
+Notebook
+
+F1_Definición.ipynb
+
+### Fase 2: Exploración y Preprocesamiento
+Durante esta fase se realizó:
+
+1. Exploración del dataset.
+2. Construcción del diccionario de variables.
+3. Identificación de nulos.
+4. Limpieza de datos.
+5. Validación del conjunto de datos.
+Notebook
+
+F2_Exploración.ipynb
+
+### Fase 3: Núcleo Algorítmico y POO
+Durante esta fase se desarrolló:
+
+1. Programación Orientada a Objetos.
+2. Encapsulamiento.
+3. Herencia.
+4. Polimorfismo.
+5. Validación técnica.
+6. Análisis de eficiencia.
+7. Medición de tiempo y memoria.
+Notebook
+
+F3_NucleoAlgoritmico.ipynb
+
+### Dependencias
+Las dependencias utilizadas se encuentran en:
 
 requirements.txt
-
-Principales librerías utilizadas:
-
-pandas numpy matplotlib jupyter Instalación pip install -r requirements.txt Ejecución Ejecutar los notebooks en el siguiente orden:
-
-F1_Definicion.ipynb F2_Exploracion.ipynb Reproducibilidad El proyecto fue desarrollado utilizando Python y Jupyter Notebook. Todas las dependencias necesarias se encuentran registradas en el archivo requirements.txt, permitiendo la reproducción del análisis en otros entornos.
-
-Control de Versiones El proyecto utiliza Git y GitHub para gestionar el desarrollo, mantener trazabilidad de los cambios realizados y registrar el avance de cada fase mediante commits descriptivos.
